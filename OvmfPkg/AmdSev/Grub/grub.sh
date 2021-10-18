@@ -87,6 +87,7 @@ ${mkimage} -O x86_64-efi \
            -c "${basedir}/grub-bootstrap.cfg" \
            -m "${basedir}/disk.fat" \
            -o "${basedir}/grub.efi" \
+			  -d /home/luca/sev-tools-with-secret-patches/ubuntu-grub/ubuntu-grub-bin/usr/lib/grub/x86_64-efi \
            ${GRUB_MODULES}
 
 remove_efi=0

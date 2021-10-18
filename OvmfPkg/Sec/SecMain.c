@@ -918,7 +918,12 @@ SecCoreStartupWithStack (
     (UINT32)(UINTN)BootFv,
     (UINT32)(UINTN)TopOfCurrentStack
     ));
-
+  //added by luca to find entry point for gcc breakpoint
+  
+  DEBUG ((DEBUG_INFO,
+    "Vaddr FindAndReportEntryPoints %p\n",
+    FindAndReportEntryPoints
+    ));
   //
   // Initialize floating point operating environment
   // to be compliant with UEFI spec.
